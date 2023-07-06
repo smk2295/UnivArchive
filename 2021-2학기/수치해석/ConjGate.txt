@@ -1,0 +1,78 @@
+	implicit real*8(a-h, o-z)
+
+	dimension A(1024, 1024), p(1024), q(1024), xnew(1024), &
+	x(1024), r(1024), b(1024)
+
+	nx = 32
+	N = nx**2
+
+	tol = 1.e-8
+
+	data x/1024*0./
+
+	do i = 1, N
+	  if(i > 1) a(i, i-1) = -1.
+	  if(i < N) a(i, i+1) = -1
+	  if(i+nx  <= N) a(i, i+nx) = -1.
+	  if(i-nx >=1) a(i, i-nx) = -1
+	  a(i, i) = 4.5
+	  b(i) = cos(i+0.5)
+	enddo
+
+	p = b
+	r = b
+
+	call matvec(A, p, q, N)
+
+	rho = dot_product(r, r)
+	alpha = rho/dot_product(p, q)
+
+	x = x + alpha*p
+	r = r - alpha*q
+	r0 = sqrt(dot_product(b, b))
+
+	do k = 2, N/2
+	  rho0 = rho
+	  rho = dot_product(r, r)
+	  beta = rho/rho0
+	  p = r + beta*p
+
+	  call matvec(A, p, q, N)
+	  alpha = rho/dot_product(p, q)
+
+	  x = x + alpha*p
+	  r = r - alpha*q
+
+	  rn = dot_product(r, r)
+
+	  error = sqrt(rn/r0)
+
+	  write(*, *) k, rn, error
+
+	  if(error < tol) goto 300
+
+         enddo
+	  
+300	continue
+	
+	write(*, *) x(1), x(2), x(N-1), x(N)
+
+	stop
+	end
+
+
+	subroutine matvec(A, x, y, N)
+	
+	implicit real*8(a-h, o-z)
+
+	dimension A(N, *), x(*), y(*)
+
+	do i = 1, N
+	  y(i) = 0.
+	  do j = 1, N
+	    y(i) = y(i) + A(i,j)*x(j)
+	  enddo
+	enddo
+
+	return
+	end

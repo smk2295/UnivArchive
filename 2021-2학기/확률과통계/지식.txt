@@ -1,0 +1,27 @@
+N=100000;
+
+m=0;
+
+v=2;
+
+X = sqrt(v)*randn(1,N);
+
+[y,x]=hist(X);
+
+res = x(2)-x(1);
+
+figure
+
+plot(x,y/(N/res))
+
+hold on
+
+grid on
+
+%이론
+
+xx=-6:0.01:6;
+
+X2 = 1/sqrt(2*pi*v)*exp(-(xx-m).^2/(2*v));
+
+plot(xx,X2)
