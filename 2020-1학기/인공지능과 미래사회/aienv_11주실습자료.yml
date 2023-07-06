@@ -1,0 +1,21 @@
+name: ai_test
+dependencies:
+- python=3.6
+- numpy=1.16.4
+- keras=2.1.6
+- scikit-learn=0.19.1
+- pandas=0.22.0
+- matplotlib
+- jupyter
+- cython
+- nltk
+- flask
+- wtforms
+- seaborn=0.8.1
+- pydot
+- imageio
+- pydotplus
+- pip:
+  - tensorflow==1.8.0
+  - watermark  
+  - pyprind
