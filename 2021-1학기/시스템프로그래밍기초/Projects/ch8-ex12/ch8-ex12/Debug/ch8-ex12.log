@@ -1,0 +1,28 @@
+﻿빌드 시작: 2021-05-20 오후 6:24:26
+     1>2 노드의 "c:\Users\smk38\documents\visual studio 2010\Projects\ch8-ex12\ch8-ex12\ch8-ex12.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\ch8-ex12.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "8-12.cpp"
+         8-12.cpp
+     1>c:\users\smk38\documents\visual studio 2010\projects\ch8-ex12\ch8-ex12\8-12.cpp(9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 'scanf' 선언을 참조하십시오.
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\smk38\documents\visual studio 2010\Projects\ch8-ex12\Debug\ch8-ex12.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ch8-ex12.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\smk38\documents\visual studio 2010\Projects\ch8-ex12\Debug\ch8-ex12.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\smk38\documents\visual studio 2010\Projects\ch8-ex12\Debug\ch8-ex12.lib" /MACHINE:X86 "Debug\ch8-ex12.exe.embed.manifest.res"
+         "Debug\8-12.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ch8-ex12.exe.embed.manifest" /manifest "Debug\ch8-ex12.exe.intermediate.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         ch8-ex12.vcxproj -> c:\users\smk38\documents\visual studio 2010\Projects\ch8-ex12\Debug\ch8-ex12.exe
+       FinalizeBuildStatus:
+         "Debug\ch8-ex12.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\ch8-ex12.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"c:\Users\smk38\documents\visual studio 2010\Projects\ch8-ex12\ch8-ex12\ch8-ex12.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.44

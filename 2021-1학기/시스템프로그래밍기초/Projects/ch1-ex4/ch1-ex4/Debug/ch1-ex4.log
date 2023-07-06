@@ -1,0 +1,13 @@
+﻿빌드 시작: 2021-03-09 오후 4:06:13
+     1>2 노드의 "c:\Users\smk38\documents\visual studio 2010\Projects\ch1-ex4\ch1-ex4\ch1-ex4.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\ch1-ex4.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "에러 메시지 문제.cpp"
+         에러 메시지 문제.cpp
+     1>c:\users\smk38\documents\visual studio 2010\projects\ch1-ex4\ch1-ex4\에러 메시지 문제.cpp(8): fatal error C1075: 왼쪽 중괄호 '{'(위치: 'c:\users\smk38\documents\visual studio 2010\projects\ch1-ex4\ch1-ex4\에러 메시지 문제.cpp(4)')이(가) 짝이 되기 전에 파일의 끝이 나타났습니다.
+     1>"c:\Users\smk38\documents\visual studio 2010\Projects\ch1-ex4\ch1-ex4\ch1-ex4.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.21
